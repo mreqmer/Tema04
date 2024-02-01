@@ -1,4 +1,4 @@
-package arraysSinFunciones;
+package arrays_sin_funciones;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package arraysSinFunciones;
+package arrays_sin_funciones;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class Ejercicio03 {
 		int tablaDiez[] = new int [10];
 		
 		//bucle para asignar valores desde el final de lña tabla hasta el principio
-		for(int i = (tablaDiez.length - 1); i>=0; i--) {
+		for(int i = tablaDiez.length - 1; i>=0; i--) {
 			System.out.println("Introduce un número: ");
 			numero = sc.nextInt();
 			tablaDiez[i] = numero;

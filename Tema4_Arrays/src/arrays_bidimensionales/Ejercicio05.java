@@ -1,4 +1,4 @@
-package arraysBidimensionales;
+package arrays_bidimensionales;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package claseArrays;
+package clase_arrays;
 import java.util.Arrays;
 
 public class Ejercicio02 {

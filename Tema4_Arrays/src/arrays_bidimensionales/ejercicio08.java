@@ -1,4 +1,4 @@
-package arraysBidimensionales;
+package arrays_bidimensionales;
 
 public class ejercicio08 {
 

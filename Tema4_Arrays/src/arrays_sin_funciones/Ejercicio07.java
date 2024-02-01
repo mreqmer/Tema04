@@ -1,4 +1,4 @@
-package arraysSinFunciones;
+package arrays_sin_funciones;
 
 import java.util.Scanner;
 
@@ -47,7 +47,7 @@ public class Ejercicio07 {
 	//funcion para guardar pasar el valor numerico del mes a imprimirlo escrito
 	static String mostrarMes(int mesNumerico) {
 
-		String mesEscrito = switch (mesNumerico) {
+		return switch (mesNumerico) {
 		case 1 -> "en";
 		case 2 -> "feb";
 		case 3 -> "mar";
@@ -61,8 +61,6 @@ public class Ejercicio07 {
 		case 11 -> "nov";
 		default -> "dic";
 		};
-
-		return mesEscrito;
 	}
 
 }
