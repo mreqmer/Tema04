@@ -8,11 +8,12 @@ public class Ejercicio01 {
 		Scanner sc = new Scanner(System.in);
 		// tabla
 		int tabla1[];
-		// longitude de la tabla
+		// longitud de de la tabla
 		int n;
 		// número a rellenar en la tabla
 		int m;
-
+		
+		//pide información para el largo de la tabla y el valor a rellenar
 		System.out.println("Introduce la longitud de la tabla: ");
 		n = sc.nextInt();
 		System.out.println("Introduce el número para rellenar la tabla: ");
@@ -20,6 +21,7 @@ public class Ejercicio01 {
 		
 		//definimos la longitud de la tabla
 		tabla1 = new int[n];
+		
 		//rellenamos la tabla
 		Arrays.fill(tabla1, m);
 		

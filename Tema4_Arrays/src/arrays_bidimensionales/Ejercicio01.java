@@ -34,7 +34,8 @@ public class Ejercicio01 {
 			System.out.println("");
 		}
 
-//		//muestra el contenido del array 2D con un for
+//		//muestra el contenido del array 2D con un for, i siempre es las filas y j las columnas
+		//comentado por tener el ejemplo a mano
 //		for (int i = 0; i < 3; i++) {
 //			for (int j = 0; j < 6; j++) {
 //				System.out.print(tablabi[i][j] + "\t");

@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class Ejercicio07 {
 
+	static final int LONG_LOTERIA = 6;
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Random rand = new Random();
@@ -40,6 +42,8 @@ public class Ejercicio07 {
 		System.out.println(Arrays.toString(ganador));
 		System.out.println("Usted tiene " + contador + " aciertos.");
 
+		sc.close();
+		
 	}
 
 }

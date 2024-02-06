@@ -4,38 +4,33 @@ import java.util.Scanner;
 
 public class Ejercicio07 {
 
+	static final int MESES = 12;
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		// var
-		// recoge la temperatura que se guarda en la tabla
-		int numTemperatura;
-		// meses del año de forma numerica
-		int mes = 0;
-		// meses escritos
-		String mesEscrito;
+		// meses
+		String meses[] = { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
+				"Octubre", "Noviembre", "Diciembre" };
 		// tabla que guarda las temperaturas del año
-		int regTemperatura[] = new int[12];
-
-		// bucle encargador de guardar la temperatura correspondiente al año actual
-		for (int i = 0; i < regTemperatura.length; i++) {
-			mes++;
-			// muestra el mes según la posición actual del bucle
-			mesEscrito = mostrarMes(mes);
-
-			System.out.println("Temperatura de " + mesEscrito + ": ");
-			numTemperatura = sc.nextInt();
-			regTemperatura[i] = numTemperatura;
-		}
-		//vuelve a igualar el mes a 0 ya que lo necesitaremos reiniciado en un futuro
-		mes = 0;
-		// bucle que pinta el diagrama de barras
+		int regTemperatura[] = new int[MESES];
 		
-		for(int posicionMes : regTemperatura) {
-			mes++;
-			mesEscrito = mostrarMes(mes);
-			System.out.print(mesEscrito + "\t|");
-			//bucle encargado de poner los asteriscos de temperatura tras cada mes
-			for (int j = 0; j < posicionMes; j++) {
+		// encargado de guardar la temperatura correspondiente al año actual
+		for (int i = 0; i < regTemperatura.length; i++) {
+			System.out.println("Temperatura de " + meses[i] + ": ");
+			regTemperatura[i] = sc.nextInt();
+		}
+
+		// pinta el gráfico de temperaturas
+		for (int i = 0; i < regTemperatura.length; i++) {
+			// da formato añadiendo más o menos tabs
+			if (i == 8 || i == 10 || i == 11) {
+				System.out.print(meses[i] + "\t|");
+			} else {
+				System.out.print(meses[i] + "\t\t|");
+			}
+			// encargado de poner los asteriscos de temperatura tras cada mes
+			for (int j = 0; j < regTemperatura[i]; j++) {
 				System.out.print("*");
 			}
 			System.out.println("");
@@ -43,24 +38,6 @@ public class Ejercicio07 {
 		
 		sc.close();
 
-	}
-	//funcion para guardar pasar el valor numerico del mes a imprimirlo escrito
-	static String mostrarMes(int mesNumerico) {
-
-		return switch (mesNumerico) {
-		case 1 -> "en";
-		case 2 -> "feb";
-		case 3 -> "mar";
-		case 4 -> "abr";
-		case 5 -> "may";
-		case 6 -> "jun";
-		case 7 -> "jul";
-		case 8 -> "ago";
-		case 9 -> "sept";
-		case 10 -> "oct";
-		case 11 -> "nov";
-		default -> "dic";
-		};
 	}
 
 }

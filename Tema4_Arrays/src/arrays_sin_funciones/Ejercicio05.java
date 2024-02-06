@@ -7,8 +7,6 @@ public class Ejercicio05 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		// var
-		// se guarda un numero que se asignará a una posición de un array
-		int numero;
 		// se guarda la suma de los números de una tabla
 		int numSuma = 0;
 		// guarda el menor número de la tabla
@@ -18,23 +16,23 @@ public class Ejercicio05 {
 		// tabla de 10 numeros
 		int tablaDiez[] = new int[10];
 
-		// bucle para pedir valores para la tabla, además comprueba que número es mayor
-		// y menor
+		// pide los valores para la tabla, además comprueba que número es mayor y menor
 		for (int i = 0; i < tablaDiez.length; i++) {
 			System.out.println("Introduce un número: ");
-			numero = sc.nextInt();
-			tablaDiez[i] = numero;
-			// comprobación de número máximo y mínimo
-			if (numero > maximo) {
-				maximo = numero;
-			}
-			if (numero < minimo) {
-				minimo = numero;
-			}
+			tablaDiez[i] = sc.nextInt();
+			
+			
 		}
 		// bucle para sumar los números de la tabla
+		// comprobación de número máximo y mínimo
 		for (int posicion : tablaDiez) {
-			numSuma = numSuma + posicion;
+			numSuma += posicion;
+			if (posicion > maximo) {
+				maximo = posicion;
+			}
+			if (posicion < minimo) {
+				minimo = posicion;
+			}
 
 		}
 		// muestra los resultados

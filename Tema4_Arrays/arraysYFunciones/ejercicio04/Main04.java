@@ -19,10 +19,9 @@ public class Main04 {
 		// llama a la función de busqueda secuencial
 		pos = buscar(tabla, clave);
 
-		// devuelve un mensaje con la posición en caso que se encuentre, si no mensaje
-		// de error
+		// devuelve un mensaje con la posición en caso que se encuentre, si da -1
 
-		System.out.println((pos > -1 ? "El número se encuentra en: " + pos : "No se encuentra el número"));
+		System.out.println((pos > -1 ? "El número se encuentra en: " + pos : "-1"));
 		sc.close();
 	}
 

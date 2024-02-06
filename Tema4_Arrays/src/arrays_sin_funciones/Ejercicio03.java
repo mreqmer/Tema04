@@ -7,20 +7,17 @@ public class Ejercicio03 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		// var
-		//guarda el numero introducido por el usuario
-		int numero;
 		//tabla de 10 numeros
 		int tablaDiez[] = new int [10];
 		
-		//bucle para asignar valores desde el final de lña tabla hasta el principio
-		for(int i = tablaDiez.length - 1; i>=0; i--) {
+		//Asigna los valores a una tabla
+		for(int i = 0; i<tablaDiez.length; i++) {
 			System.out.println("Introduce un número: ");
-			numero = sc.nextInt();
-			tablaDiez[i] = numero;
+			tablaDiez[i] = sc.nextInt();
 		}
-		//bucle para mostar en orden los números de la tabla
-		for(int posicion : tablaDiez) {
-			System.out.println(posicion);
+		//muestra los valores en orden inverso
+		for(int i = tablaDiez.length - 1; i>=0; i--) {
+			System.out.print(tablaDiez[i] + " ");
 		}
 		
 		sc.close();

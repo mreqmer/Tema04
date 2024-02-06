@@ -1,6 +1,5 @@
 package arrays_bidimensionales;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Ejercicio05 {
@@ -29,7 +28,7 @@ public class Ejercicio05 {
 			System.out.println(sumaFila);
 		}
 		//recorre el array transpuesto para sumar las filas, que resulta en el sumatorio de las columnas
-		//además aprovehca para sumar las columnas para calcular el sumatorio total y mostrarlo
+		//además aprovecha para sumar las columnas para calcular el sumatorio total y mostrarlo
 		for (int j = 0; j < tabla[0].length; j++) {
 			sumaCol = 0;
 			for (int i = 0; i < tabla.length; i++) {
